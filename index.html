@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>sucaishui</title>
+    <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/two.js" defer></script>
+</head>
+
+<body>
+    <header class="mast-head">
+        <a id="head"></a>
+        <div id="df" onclick="heade()" data-demo="true" ;><img src="img/here.jpg" id="image-df"></div>
+        <a id="user" onclick="showpage()"></a>
+        <div class="out"></div>
+        <div id="qrcodes">
+            <ul id="child">
+                <li>
+                    <h3 class="h3">官方微博</h3>
+                    <img src="img/qrcode-weibo.jpg" style="width: 172px; height: 172px;">
+                    <h4 class="h4">weibo.com/teamt</h4>
+                </li>
+                <li>
+                    <h3 class="h3">官方微信</h3>
+                    <img src="img/qrcode-wechat.jpg" style="width: 172px; height: 172px;">
+                    <h4 class="h4">teamthink艺想互动</h4>
+                </li>
+                <li>
+                    <h3 class="h3">官方网站</h3>
+                    <img src="img/qrcode-site.jpg" style="width: 172px; height: 172px;">
+                    <h4 class="h4">手机访问</h4>
+                </li>
+                <li>
+                    <h3 class="h3">联络信息</h3>
+                    <img src="img/qrcode-contact.jpg" style="width: 172px; height: 172px;">
+                    <h4 class="h4">添加到通讯录</h4>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="login">
+        <div onclick="hiddenpage()" style="float: right; background: white;width: 50px; height: 30px;margin-top: -705px;margin-left: 1470px;"><img src="../img/clear.png"></div>
+        <div class="loginm" id="loginm">
+            <p style="text-align: center; color: white;" id="huan">登陆</p>
+            <form id="loginl">
+                <div class="uname">
+                    <input type="text" id="loginname" placeholder="用户名" name="username">
+                </div>
+                <div class="upass">
+                    <input type="password" id="loginpass" placeholder="密码" name="password">
+                </div>
+                <button type='button' onclick="judgelogin()">登陆</button>
+                <button type='button' onclick="intoRegister()">注册</button>
+            </form>
+            <form id="loginr">
+                <div class="uname">
+                    <input type="text" id="uname" name="username" placeholder="用户名">
+                </div>
+                <div class="utel">
+                    <input type="tel" id="utel" name="usertel" placeholder="电话">
+                </div>
+                <div class="upass">
+                    <input type="password" id="upass" name="password" placeholder="密码">
+                </div>
+                <div class="upass1">
+                    <input type="password" id="upass1" name="password" placeholder="确认密码">
+                </div>
+                <button type='button' onclick="judgeregister()">注册</button>
+                <button type='button' onclick="backLogin()">返回</button>
+            </form>
+        </div>
+    </div>
+    <div id="all">
+        <div class="blockone">
+            <div class="title">
+                <h1 class="onetitle">艺术 科技 梦想 未来</h1>
+                <h2 class="twotitle">
+                    <span style="color: #ff3333;">ART</span>
+                    <span style="color: #33ccff;">TECHNOLOGY</span>
+                    <span style="color: #66cc00;">DREAM</span>
+                    <span style="color: #ff6633;">FUTURE</span>
+                </h2>
+            </div>
+        </div>
+        <div class="blockthree">
+            <div class="small">
+                <h2 class="h_two_title">• about us •</h2>
+                <hr class="line">
+                <h1 class="h_one_title"><span style="color:#ff3333;">壹</span>家坚持极致的网站服务公司</h1>
+                <h4 class="h_four_title">WE CREATE BEAUTIFUL WEBSITES FOR BRANDS</h4>
+                <p>TEAMTHINK（北京艺想互动视觉艺术有限公司）是一家企业互联网整体策略规划公司，总能带给客户最新的互联网思维理念。从网站结构的规划，UI设计，UX (用户体验)，程序开发，数据搭建到维护服务，我们力求做到极致完美，为很多行业的国内知名品牌打造过精美的网站。</p>
+            </div>
+        </div>
+        <div id="blockfour">
+            <div id="list" style="left: -1511px;">
+                <img src="img/three.jpg" alt="1">
+                <img src="img/timg.jpg" alt="1">
+                <img src="img/two.jpg" alt="2">
+                <img src="img/three.jpg" alt="3">
+                <img src="img/timg.jpg" alt="3">
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        </div>
+        <div class="beauty">
+            <div>
+                <h2 class="color_blue">• OUR CONCEPT •</h2>
+                <hr class="line" style="width: 250px;">
+                <h1 class="sub_title"><span style="color: #33ccff;">贰</span>维美学理念的执着</h1>
+                <div>
+                    <p class="psleft">精华呈现 • 精致细节</p>
+                    <img src="img/jingjian.png" id="imgg" ; style="width: 240px; height: 120px; margin-left: 20px;">
+                    <p class="psright">简明易懂 • 极简而奢</p>
+                </div>
+            </div>
+        </div>
+        <div class="blockfive">
+            <h2 class="color_green">• OUR WORKS •</h2>
+            <hr class="line" style="margin-top: 90px;">
+            <h1 class="sub_title" style="padding-top: 30px;"><span style=" color: #66cc00; font-size: 32px;">叁</span>种“语言”的碰撞与完美结合</h1>
+            <h3 class="h_three_title">美学 • 程序 • 文字</h3>
+            <ul>
+                <li><a href="#" style="color: white;">所有作品<span class="style">&nbsp;&nbsp;|</span></a></li>
+                <li><a href="#" style="color: white;">html5响应式<span class="style"">&nbsp;&nbsp;|</span></a></li>
+                <li><a href="#" style="color: white;">企业网站<span class="style"">&nbsp;&nbsp;|</span></a></li>
+                <li><a href="#" style="color: white;">商城网站<span class="style"">&nbsp;&nbsp;|</span></a></li>
+                <li><a href="#" style="color: white;">其他</a></li>
+            </ul>
+            <div id="subject">
+                <ul>
+                    <li class="big">
+                        <img src="img/1.jpg">
+                        <h5 class="end">Zhaoui昭仪翠屋</h5>
+                    </li>
+                    <li class="sum">
+                        <img src="img/2.jpg">
+                        <h5 class="end">Brook Forest Garden 保利 • 溪湖林语</h5>
+                    </li>
+                    <li class="sum">
+                        <img src="img/3.jpg">
+                        <h5 class="end">BYD F0 比亚迪 F0</h5>
+                    </li>
+                    <li class="sum">
+                        <img src="img/4.jpg">
+                        <h5 class="end">Chuan Production Film Studio 川制作</h5>
+                    </li>
+                    <li class="sum">
+                        <img src="img/5.jpg">
+                        <h5 class="end">The West Coast 保利 • 西海岸</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="circle" style="line-height: 50px; ">
+            <h2 class="color_green">• service process •</h2>
+            <hr class="line" style="margin-top: 90px; width: 245px;">
+            <h1 style="font-size: 32px; text-align: center; margin-top: 20px;"><span style="color: #7acc33;">肆</span> 步专业服务流程</h1>
+            <div>
+                <div>
+                    <img class="photo" src="img/circle1.png">
+                    <h2 class="greentitle">规划</h2>
+                    <p>内容梳理 结构规划</p>
+                    <p>框架整合方案</p>
+                </div>
+                <div>
+                    <img class="photo1" src="img/circle2.png">
+                    <h2 class="greentitle">设计</h2>
+                    <p>界面设计 交互创意</p>
+                    <p>响应式布局设计</p>
+                </div>
+                <div>
+                    <img class="photo2" src="img/circle3.png">
+                    <h2 class="greentitle">执行</h2>
+                    <p>前端开发 </p>
+                    <p>后台开发调试</p>
+                </div>
+                <div>
+                    <img class="photo3" src="img/circle4.png">
+                    <h2 class="greentitle">维护</h2>
+                    <p>网站内容更新</p>
+                    <p>服务器日常维护</p>
+                </div>
+            </div>
+        </div>
+        <div class="know">
+            <div class="tel">
+                <h1 style=" font-size: 30px; color: #1D1D1D; font-weight: normal;"><span style="color:rgb(102,214,214);">五</span> 大课程优势，助你成为大前端时代的佼佼者
+                </h1>
+                <p style="font-size: 18px;color: #666;">适应市场需求，打造高标准用户体验</p>
+            </div>
+            <div id="picture">
+                <div id="bug">
+                    <img style="margin-top: 60px;" src="img/know1.jpg">
+                    <h3 class="font">移动端开发技能</h3>
+                    <p class="fontone">学完可独立开发和制作移动端网站</p>
+                </div>
+                <div id="btm">
+                    <p>课程结构由浅入深，基础课程讲解充分，了解网页的结构组成、分析页面的布局、使用JavaScript和JQuery完成页面常见特效，最终帮助学员成为企业项目需求型Web前端工程师。</p>
+                </div>
+                <div id="bugone">
+                    <img style="margin-top: 60px;" src="img/know2.jpg">
+                    <h3 class="font">开设服务器课程体系</h3>
+                    <p class="fontone">掌握管理企业服务器后台的能力</p>
+                </div>
+                <div id="btmone">
+                    <p>掌握HTML5、CSS3、Viewport、rem、Bootstrap主流适配方案、移动端布局、媒体查询，设备尺寸划分、主流响应式布局框架、touch事件、手势封装以及移动端常用框架学习。</p>
+                </div>
+            </div>
+            <div class="pictureone">
+                <div id="bugtwo">
+                    <img style="margin-top: 60px;" src="img/know3.jpg">
+                    <h3 class="font">课程循序渐进</h3>
+                    <p class="fontone">技术小白可以快速上手</p>
+                </div>
+                <div id="btmtwo">
+                    <p>熟悉后台编程语言PHP的基础语法，能够开发简单的动态页面和后台接口，从而能够快速适应与后台协作开发的工作场景。</p>
+                </div>
+                <div id="bugthree">
+                    <img style="margin-top: 60px;" src="img/know4.jpg">
+                    <h3 class="font">模拟真实企业项目开发</h3>
+                    <p class="fontone">在学习中获得职场工作经验</p>
+                </div>
+                <div id="btmthree">
+                    <p>模拟企业中的真实开发，从交互稿、设计稿、接口文档，到项目打包工具，源代码管理工具，团队式开发，真实体会企业开发完整过程，直至项目上线。</p>
+                </div>
+                <div id="bugfour">
+                    <img style="margin-top: 60px;" src="img/know6.jpg">
+                    <h3 class="font">实战名师教学</h3>
+                    <p class="fontone">学到总监级开发思维</p>
+                </div>
+                <div id="btmfour">
+                    <p>从业5-10年，统筹过一线项目的Web前端技术大牛亲身授课，授业解惑，传递开发思维、工作技巧，真正的做到化繁为简，学员技能稳步提升。</p>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="child">
+                <h2 class="fun">• contact us •</h2>
+                <hr class="line" style="width:200px;">
+                <h1 style="font-size: 32px;font-weight: normal; text-align: center;">与我们为<span style="color: #ff6633;"> 伍</span> • 为您之所想</h1>
+                <div id="th">
+                    <div class="children">
+                        <img class="see" src="img/last1.png">
+                        <p style="text-align: center;  width: 200px;padding:0px 50px 80px 70px;">河南省新乡市红旗区洪门镇河南科技学院主楼906</p>
+                    </div>
+                    <div class="children">
+                        <img class="see" src="img/last2.png">
+                        <p style="text-align: center;">电话：1638976019</p>
+                    </div>
+                    <div class="children">
+                        <img class="see" src="img/last3.png">
+                        <p style="text-align: center;">qq：3530214119@qq.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 1511px;height: 50px;text-align: center;">
+            河南科技学院 三月软件工作室 &copy;版权所有
+        </div>
+        <a id="toTop" onclick="toTop()" onmouseover="toTopHover()" onmouseout="toTophide()" style="opacity: 1; background-position-y: 0px;">
+        </a>
+    </div>
+</body>
+
+</html>
